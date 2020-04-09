@@ -10,7 +10,9 @@ const dbConnection = async () => {
     });
     console.log(`mongoDB connected  to ${connection.connection.host}`);
   } catch (error) {
-    console.log(error.message);
+    console.error(error.message);
+    // exit process with faliure
+    process.emit(1);
   }
 };
 module.exports = dbConnection;

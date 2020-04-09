@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 // import Model
-const Message = require("../models/message");
+const Message = require("../models/Message");
 
 //@ method GET
 // @ get all messages
